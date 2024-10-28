@@ -35,7 +35,7 @@ iframe.app is an all-in-one embeddable tools platform that enables website owner
 
 ```html
 <!-- Example embed code -->
-<iframe src="https://iframe.app/tools/your-selected-tool" 
+<iframe src="https://www.iframe.app/tools/your-selected-tool" 
         width="100%" 
         height="500px" 
         frameborder="0">
@@ -64,11 +64,11 @@ We are currently in development. Sign up on our website to be notified when we l
 ## Support
 
 For questions and support, please reach out to us at:
-- Website: [https://iframe.app](https://iframe.app)
+- Website: [https://www.iframe.app/](https://www.iframe.app/)
 
 ## License
 
-All rights reserved © 2024 iframe.app
+All rights reserved © 2024 [iframe.app](https://www.iframe.app/)
 
 ---
 
