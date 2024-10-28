@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iframe.app - Embed Fast, Launch Website Faster</title>
+    <meta name="description" content="Your all-in-one embeddable tools platform. Enhance your website with powerful features through simple iframe integration.">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.1/feather.min.js"></script>
     <link rel="canonical" href="https://www.iframe.app/">
@@ -12,137 +13,132 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: #090909;
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-
-        #background-animation {
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 0;
-        }
-
-        .content {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .logo {
-            font-size: 4rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #00ffcc, #3399ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-transform: lowercase;
-            letter-spacing: -1px;
-        }
-
-        .slogan {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            color: #AAA;
-            font-weight: 300;
-            letter-spacing: 0.5px;
-        }
-
-        .description {
-            max-width: 600px;
-            margin: 0 auto 2rem;
-            line-height: 1.6;
-            color: #888;
-        }
-
-        .coming-soon {
-            color: #00ffcc;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 2px;
-            margin-bottom: 1rem;
-            font-weight: 500;
-        }
-
-        .features {
-            display: flex;
-            gap: 3rem;
-            justify-content: center;
-            margin-top: 3rem;
-        }
-
-        .feature {
-            text-align: center;
-            max-width: 200px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .feature-icon {
-            width: 48px;
-            height: 48px;
-            margin-bottom: 1rem;
-            color: #00ffcc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .feature p {
-            color: #888;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <canvas id="background-animation"></canvas>
     <div class="content">
-        <p><img src="./icon.svg" style="width: 100px;"></p>
-        <h1 class="logo"><a href="https://www.iframe.app/" title="Embed Fast, Launch Website Faster">iframe.app</a></h1>
-        <p class="slogan">Embed Fast, Launch Website Faster</p>
-        <p class="coming-soon">Coming Soon</p>
-        <p class="description">
-            Your all-in-one embeddable tools platform. Enhance your website with powerful features through simple iframe integration.
-        </p>
-        <div class="features">
-            <div class="feature">
-                <div class="feature-icon">
-                    <i data-feather="zap"></i>
+        <div class="hero">
+            <p><img src="./icon.svg" style="width: 100px;"></p>
+            <h1 class="logo"><a href="https://www.iframe.app/" title="Embed Fast, Launch Website Faster">iframe.app</a></h1>
+            <p class="slogan">Embed Fast, Launch Website Faster</p>
+            <p class="coming-soon">Coming Soon</p>
+            <p class="description">
+                Your all-in-one embeddable tools platform. Enhance your website with powerful features through simple iframe integration.
+            </p>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i data-feather="zap"></i>
+                    </div>
+                    <p>Quick Integration</p>
                 </div>
-                <p>Quick Integration</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">
-                    <i data-feather="package"></i>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i data-feather="package"></i>
+                    </div>
+                    <p>Rich Tools</p>
                 </div>
-                <p>Rich Tools</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">
-                    <i data-feather="shield"></i>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i data-feather="shield"></i>
+                    </div>
+                    <p>Secure & Reliable</p>
                 </div>
-                <p>Secure & Reliable</p>
             </div>
         </div>
+
+        <div class="details">
+            <div class="section">
+                <h2>Getting Started</h2>
+                <p style="text-align: left;">Start enhancing your website in three simple steps:</p>
+                <div class="code-block">
+                    <code>
+&lt;iframe src="https://www.iframe.app/tools/your-selected-tool" 
+        width="100%" 
+        height="500px" 
+        frameborder="0"&gt;
+&lt;/iframe&gt;
+                    </code>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Use Cases</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3><i data-feather="code"></i> No-Code Website Tools</h3>
+                        <p>Build a tools website without coding, just embed our tools to serve your users.</p>
+                    </div>
+                    <div class="card">
+                        <h3><i data-feather="globe"></i> Static Websites</h3>
+                        <p>Add dynamic features without backend development, all powered by simple iframe integration.</p>
+                    </div>
+                    <div class="card">
+                        <h3><i data-feather="edit"></i> Blog Platforms</h3>
+                        <p>Enhance your blog with interactive tools that engage readers and provide value.</p>
+                    </div>
+                    <div class="card">
+                        <h3><i data-feather="shopping-cart"></i> E-commerce Sites</h3>
+                        <p>Add utility calculators and converters to improve the shopping experience.</p>
+                    </div>
+                    <div class="card">
+                        <h3><i data-feather="layout"></i> Portfolio Websites</h3>
+                        <p>Showcase interactive components that demonstrate your capabilities.</p>
+                    </div>
+                    <div class="card">
+                        <h3><i data-feather="book-open"></i> Educational Platforms</h3>
+                        <p>Integrate learning tools and calculators for better engagement.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Benefits</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3><i data-feather="clock"></i> Save Development Time</h3>
+                        <p>No need to build tools from scratch - we've done the heavy lifting.</p>
+                    </div>
+                    <div class="card">
+                        <h3><i data-feather="refresh-cw"></i> Reduce Maintenance</h3>
+                        <p>We handle updates and improvements, so you don't have to.</p>
+                    </div>
+                    <div class="card">
+                        <h3><i data-feather="users"></i> Improve User Experience</h3>
+                        <p>Add valuable features instantly without complexity.</p>
+                    </div>
+                    <div class="card">
+                        <h3><i data-feather="trending-up"></i> Stay Modern</h3>
+                        <p>Regular updates with latest features and security patches.</p>
+                    </div>
+                    <div class="card">
+                        <h3><i data-feather="zap"></i> Instant Deploy</h3>
+                        <p>Copy, paste and your new feature is live - no deployment process needed.</p>
+                    </div>
+                    <div class="card">
+                        <h3><i data-feather="dollar-sign"></i> Cost Effective</h3>
+                        <p>Save money on development and maintenance while getting professional tools.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+           <div class="footer-links">
+               <a href="https://github.com/qiayue/iframe.app" target="_blank" rel="noopener noreferrer">
+                   <i data-feather="github"></i>
+                   GitHub
+               </a>
+           </div>
+           <div class="footer-text">
+               © 2024 <a href="https://www.iframe.app/">iframe.app</a>. All rights reserved.
+           </div>
+           <div class="footer-slogan">
+               Embed Fast, Launch Website Faster
+           </div>
+        </footer>
     </div>
 
     <script>
@@ -191,5 +187,7 @@
             renderer.setSize(window.innerWidth, window.innerHeight);
         });
     </script>
+    <script defer data-domain="www.iframe.app" src="https://click.pageview.click/js/script.js"></script>
+    <script type="text/javascript" src="https://server.listyes.com/track/t.o.js?v=24102622"></script>
 </body>
 </html>
